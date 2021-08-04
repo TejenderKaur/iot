@@ -1,0 +1,176 @@
+<html lang="en" xmlns="http://www.ikhtabirni.com">
+<head>
+    <meta charset="utf-8" />
+    <title>Input</title>
+    
+     <style>
+          a
+{
+    color: #fff !important;
+    
+}
+h1
+{
+    color:white!important;
+    
+    text-align:center; !important;
+    text-transform: uppercase;
+
+}    
+         
+        
+h2
+{
+    color:wheat  !important;
+    
+    text-align:center; !important;
+    text-transform: uppercase;
+
+}
+    </style>
+    <link type="text/css" rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    
+    
+</head>
+    
+    
+    
+    
+<body>
+    <div class="container">
+        <a class="float-right" href="logout.php">LOGOUT</a>
+        
+<center>
+    <h1>CHECK THE STATUS</h1>
+<h2>TEMPERATURE</h2>
+ <input id="input001" type="number" /><button onclick="btn001()">Confirm</button>
+    <p id="message001">ENTER TEMPERATURE</p>
+</center>
+    <script>
+        function btn001() {
+            var text001;
+            var colors001 = input001.value;
+            if (colors001 >=25 && colors001 <=31) {
+                text001 = "THIS TEMPERATURE VALUE IS MOST SUITABLE";
+                document.getElementById("message001").innerHTML = text001.bold();
+            }
+      else if (colors001 >=12 && colors001 <=24 ) {
+            text001 = "THIS TEMPERATURE VALUE IS MODERATELY SUITABLE";
+            document.getElementById("message001").innerHTML = text001.bold();
+        }
+      else {
+            text001 = "THIS TEMPERATURE VALUE IS LEAST SUITABLE";
+            document.getElementById("message001").innerHTML = text001.bold();
+        }
+        }
+    </script>
+
+
+<center>
+<h2>pH</h2>
+ <input id="input002" type="number" /><button onclick="btn002()">Confirm</button>
+    <p id="message002">ENTER pH</p>
+</center>
+    <script>
+        function btn002() {
+            var text002;
+            var colors002 = input002.value;
+            if (colors002 >=6 && colors002 <=8) {
+                text002 = "THIS PH VALUE IS MOST SUITABLE";
+                document.getElementById("message002").innerHTML = text002.bold();
+            }
+      else if ((colors002 ==4) || (colors002 ==5)||(colors002 ==9)) {
+            text002 = "THIS PH VALUE IS MODERATELY SUITABLE";
+            document.getElementById("message002").innerHTML = text002.bold();
+        }
+      else {
+            text002 = "THIS PH VALUE IS LEAST SUITABLE";
+            document.getElementById("message002").innerHTML = text002.bold();
+        }
+        }
+    </script>
+
+
+<center>
+<h2>DISSOLVED OXYGEN</h2>
+ <input id="input003" type="number" /><button onclick="btn003()">Confirm</button>
+    <p id="message003">ENTER DISSOLVED OXYGEN</p>
+</center>
+    <script>
+        function btn003() {
+            var text003;
+            var colors003 = input003.value;
+            if (colors003 >=4 && colors003 <=7) {
+                text003 = "THIS DISSOLVED OXYGEN VALUE IS MOST SUITABLE";
+                document.getElementById("message003").innerHTML = text003.bold();
+            }
+      else if (colors003 >=2.5 && colors003 <4) {
+            text003 = "THIS DISSOLVED OXYGEN VALUE IS MODERATELY SUITABLE";
+            document.getElementById("message003").innerHTML = text003.bold();
+        }
+      else {
+            text003 = "THIS DISSOLVED OXYGEN VALUE IS LEAST SUITABLE";
+            document.getElementById("message003").innerHTML = text003.bold();
+        }
+        }
+    </script>
+
+
+
+
+<center>
+<h2>SALINITY</h2>
+ <input id="input004" type="number" /><button onclick="btn004()">Confirm</button>
+    <p id="message004">ENTER SALINITY</p>
+</center>
+    <script>
+        function btn004() {
+            var text004;
+            var colors004 = input004.value;
+            if (colors004 >=1 && colors004 <=15) {
+                text004 = "THIS SALINITY VALUE IS MOST SUITABLE";
+                document.getElementById("message004").innerHTML = text004.bold();
+            }
+      else if (colors004 >=16 && colors004 <=25) {
+            text004 = "THIS SALINITY VALUE IS MODERATELY SUITABLE";
+            document.getElementById("message004").innerHTML = text004.bold();
+        }
+      else {
+            text004 = "THIS SALINITY VALUE IS LEAST SUITABLE";
+            document.getElementById("message004").innerHTML = text004.bold();
+        }
+        }
+    </script>
+
+
+<center>
+<h2>TURBIDITY</h2>
+ <input id="input005" type="number" /><button onclick="btn005()">Confirm</button>
+    <p id="message005">ENTER TURBIDITY</p>
+</center>
+    <script>
+        function btn005() {
+            var text005;
+            var colors005 = input005.value;
+            if (colors005 == 35 ) {
+                text005 = "THIS TURBIDITY VALUE IS MOST SUITABLE";
+                document.getElementById("message005").innerHTML = text005.bold();
+            }
+      else if (colors005 >=18 && colors005 <=34) {
+            text005 = "THIS TURBIDITY VALUE IS MODERATELY SUITABLE";
+            document.getElementById("message005").innerHTML = text005.bold();
+        }
+      else {
+            text005 = "THIS TURBIDITY VALUE IS LEAST SUITABLE";
+            document.getElementById("message005").innerHTML = text005.bold();
+        }
+        }
+    </script>
+
+    
+    </div>
+</body>
+        
+</html>
